@@ -5,6 +5,7 @@ Created on Aug 13, 2013
 '''
 
 import random 
+from episode_names import episode_names
 
 
 
@@ -48,6 +49,7 @@ def print_episodes():
 
     print "Season: " + str(season) + " "
     print "Episode: " + str(episode)+ " "
+    print episode_names.get( (season, episode) )
     
 print_episodes()
 h = raw_input()
